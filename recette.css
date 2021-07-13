@@ -1,0 +1,144 @@
+body {
+  background-color: #8ba1bb;
+  font-family: Arial;
+  margin: 0;
+}
+p.categorie {
+  background-color: black;
+  color: white;
+  display: inline-block;
+  margin-top: 40px;
+  padding: 8px 10px;
+  margin-bottom: 0px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+div.contenu {
+  background-color: whitesmoke;
+  margin: 0px 10% 80px 10%;
+  padding: 30px;
+  min-width: 350px;
+  box-shadow: 0px 0px 8px 8px #6c829dc0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 12px;
+}
+p.description {
+  text-align: center;
+  max-width: 400px;
+  display: inline-block;
+  font-size: 14px;
+}
+.centre {
+  text-align: center;
+  width: 100%;
+}
+div.categorie {
+  margin-bottom: -18px;
+  margin-top: 60px;
+}
+
+div.separateur {
+  background-color: black;
+  width: 100px;
+  height: 1px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.info {
+  position: relative;
+}
+
+table.info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  background-color: #6c829dc0;
+  height: 80px;
+}
+table.info td {
+  text-align: center;
+  font-size: 14px;
+  vertical-align: top;
+  padding-bottom: 6px;
+}
+
+table.info th {
+  font-size: 16px;
+  vertical-align: bottom;
+}
+
+img.info {
+  display: block;
+  max-height: 400px;
+  object-fit: cover;
+  min-height: 200px; /*  taille minimale de 200 px */
+  background-color: grey;
+}
+
+div.colonne {
+  width: 45%; /*  taille automatique de la colonne de 50% */
+  margin-top: 20px; /*  augmente la taille de la marge  */
+} /* regroupe les propriétés communes des 2 Styles*/
+
+div.colonne h2 {
+  text-align: center;
+  text-transform: uppercase; /*  mettre en majuscule */
+  font-size: 15px; /*  reduire la taille des écritures */
+  border-bottom: 5px solid #6c829dc0;
+  padding-bottom: 5px;
+}
+
+div.colonne1 {
+  display: inline-block; /*  bloque la colonne */
+  margin-right: 10%;
+}
+div.colonne2 {
+  float: right; /*  affiche la colonne à droite */
+}
+div.aspect {
+  text-align: center;
+  font-size: 14px;
+}
+p.format {
+  margin: 4px;
+  border: 1px solid;
+  background-color: white;
+  padding: 8px 0;
+}
+
+table.preparation td.numero {
+  background-color: #6c829dc0;
+  color: white;
+  text-align: center; /*  centrer le texte */
+  height: 25px; /*  hauteur  */
+  width: 29px; /*  Taille */
+  font-size: 19px;
+  font-weight: bold;
+  padding-top: 10px;
+  box-sizing: border-box;
+  border-radius: 50%; /*  arrondir les bords */
+  vertical-align: top;
+  margin: 0;
+}
+
+td.preparationetape {
+  font-size: 14px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  text-align: center; /*  centrer le texte */
+}
+table.preparation tr {
+  height: 40px;
+  text-align: center;
+}
+* {
+  overflow: auto;
+}
