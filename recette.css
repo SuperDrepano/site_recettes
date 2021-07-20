@@ -16,9 +16,9 @@ p.categorie {
 
 div.contenu {
   background-color: whitesmoke;
-  margin: 0px 10% 80px 10%;
-  padding: 30px;
-  min-width: 350px;
+  margin: 40px 8px 40px 8px;
+  padding: 0px 8px 20px 8px;
+  /* min-width: 350px; */
   box-shadow: 0px 0px 8px 8px #6c829dc0;
 }
 
@@ -61,17 +61,17 @@ table.info {
   width: 100%;
   color: white;
   background-color: #6c829dc0;
-  height: 80px;
+  height: 50px;
 }
 table.info td {
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
   vertical-align: top;
   padding-bottom: 6px;
 }
 
 table.info th {
-  font-size: 16px;
+  font-size: 14px;
   vertical-align: bottom;
 }
 
@@ -84,7 +84,7 @@ img.info {
 }
 
 div.colonne {
-  width: 45%; /*  taille automatique de la colonne de 50% */
+  width: 100%; /*  taille automatique de la colonne de 50% */
   margin-top: 20px; /*  augmente la taille de la marge  */
 } /* regroupe les propriétés communes des 2 Styles*/
 
@@ -102,6 +102,7 @@ div.colonne1 {
 }
 div.colonne2 {
   float: right; /*  affiche la colonne à droite */
+  text-align: center;
 }
 div.aspect {
   text-align: center;
@@ -112,6 +113,7 @@ p.format {
   border: 1px solid;
   background-color: white;
   padding: 8px 0;
+  
 }
 
 table.preparation td.numero {
@@ -142,3 +144,38 @@ table.preparation tr {
 * {
   overflow: auto;
 }
+
+/* Style pour ordinateur: on met max_width pour mobile*/
+@media only screen and (min-width: 768px) {
+  div.contenu {
+    min-width: 350px;
+    margin: 0px 10% 80px 10%;
+    padding: 30px;
+  }
+  table.info {
+    height: 80px;
+  }
+  table.info td {
+    font-size: 14px;
+  }
+  table.info th {
+    font-size: 16px;
+  }
+  div.colonne {
+    width: 45%; /*  taille automatique de la colonne de 50% */
+  }
+
+  div.colonne1 {
+    margin-right: 10%;
+  }
+  div.colonne2 {
+    float: right; /*  affiche la colonne à droite */
+    
+  }
+}
+@media only screen and (min-width: 900px) {
+  div.contenu {
+    width: 645px;
+    margin-left: auto;
+    margin-right: auto;
+  }
